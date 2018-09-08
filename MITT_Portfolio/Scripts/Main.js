@@ -22,36 +22,39 @@
         $("#largest").text("The largest  number is: " + largest);
     });
 
+    $("#btnpa").click(function () {
+        var InputContent = String($("#pal").val())
+        var result = InputContent.split('').reverse().join('');
+
+        if (InputContent == result) {
+            $("#paout").text("The world is Palindrome!");
+        }
+        else {
+            $("#paout").text("The world is  not Palindrome!");
+        }
+    });
 
     $("#btnfb").click(function () {
         var num1 = Number($("#fbnum1").val());
         var num2 = Number($("#fbnum2").val());
         var number = [];
-        //Step 2: Perform the algorithm
-        for (var loop = 1; loop <= 100; loop++) {
-            //Here is where we determine whether to print Fizz, Buzzz, FizzBuzz or the loop counter
-            if (loop % num1 == 0 && loop % num2 == 0) {
-                //$("#fbout").text("FizzBuzz");
+       
+        for (var i = 1; i <= 100; i++) {            
+            if (i % num1 == 0 && i % num2 == 0) {
                 number.push("FizzBuzz")
-            } else if (loop % num1 == 0) {
-                //$("#fbout").text("Fizz");
+            } else if (i % num1 == 0) {
                 number.push("Fizz")
-            } else if (loop % num2 == 0) {
-                //$("#fbout").text("Buzz");
+            } else if (i % num2 == 0) {
                 number.push("Buzz")
             } else {
-                //$("#fbout").text(loop);
-                number.push(loop)
+                number.push(i)
             }
         }
-
-        //Step 3: Output the result
         var output = number.join(', ');
         $("#fbout").text(output);
     });
 
     $("#btnfa").click(function () {
-        debugger;
         var num = Number($("#fanum").val());
         var result = num;
         for (var i = num - 1; i >= 1; i--) {
@@ -61,8 +64,20 @@
     });
 
     $("#Showh").hide();
+    $("#Showh1").hide();
+    $("#Showh2").hide();
+    $("#Showh3").hide();
     
     $("#btnCode").click(function () {
         $("#Showh").toggle();
+    });
+    $("#btnCode1").click(function () {
+        $("#Showh1").toggle();
+    });
+    $("#btnCode2").click(function () {
+        $("#Showh2").toggle();
+    });
+    $("#btnCode3").click(function () {
+        $("#Showh3").toggle();
     });
 })

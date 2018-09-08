@@ -186,6 +186,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\20171209_bkp510.jpg" />
+    <Content Include="img\A-view-of-Rangitito-Island.jpg" />
+    <Content Include="img\chengdu-home.jpg" />
+    <Content Include="img\HEART.jpg" />
+    <Content Include="img\hilltop_view_at_night_by_relhom.jpg" />
     <Content Include="img\portfolio\cabin.png" />
     <Content Include="img\portfolio\cake.png" />
     <Content Include="img\portfolio\circus.png" />
@@ -194,6 +199,8 @@
     <Content Include="img\portfolio\submarine.png" />
     <Content Include="img\profile.png" />
     <Content Include="img\微信图片_20180815144553.jpg" />
+    <Content Include="img\微信截图_20180810132806.jpg" />
+    <Content Include="img\微信截图_20180810132806.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
